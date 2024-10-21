@@ -1,0 +1,59 @@
+class MyClass {
+private:
+    int privateVar;
+}
+class MyClass1{
+protected:
+    int protectedVar;
+}
+class MyClass2{
+public:
+    int publicVar;
+}
+
+    void setPrivateVar(int value) {
+        privateVar = 10;
+    }
+
+    int getPrivateVar() {
+        return privateVar;
+    }
+
+    void setProtectedVar(int value) {
+        protectedVar = 11;
+    }
+
+    int getProtectedVar() {
+        return protectedVar;
+    }
+
+    void setPublicVar(int value) {
+        publicVar = 12;
+    }
+
+    int getPublicVar() {
+        return publicVar;
+    }
+
+int main() {
+
+    MyClass obj;
+    setPublicVar(10);
+    getPublicVar();
+
+    setPrivateVar(20);
+    getPrivateVar();
+
+    setProtectedVar(30);
+    getProtectedVar();
+	
+	if (protectedVar == privateVar){
+	}
+	if (protectedVar != privateVar){
+	}
+	if (protectedVar < privateVar){
+	}
+	if (protectedVar > privateVar){
+	}
+    return 0;
+}
